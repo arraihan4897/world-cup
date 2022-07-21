@@ -7,55 +7,88 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+/* first section style  */
+
+
 section{
     margin: 140px;
 }
-.greatest-show{
-    height:500px ;
-    display: flex;
-    background-color: black;
-    border-radius: 20px;
-    color: white;
-    
- 
-  
 
-}
-.greatest-show img{
-    padding-top: 30px;
-    height: 470px;
-}
+/* animation */
 
 #first-div{
-   height: 300px;
-    width: 400px;
-    padding-left: 100px;
+    transition: 10s;
 }
+#first-div:hover{
+
+    background-color: rgb(3, 3, 114);
+    border-radius: 15px;
+    transform: rotate(360deg);
+}
+
+
+/* first div */
+
+
 h1{
     font-size: 54px;
 }
+.greatest-show{
+    width: 1050px;
+    height:500px ;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+    
+}
+
+.greatest-show img{
+    padding-top: 30px;
+    height: 470px;
+    }
+
+/* button style */
+
+ .sec-d-button{
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;}
+
 
 .live{
-    color: white;
-    background-color: rgb(253, 36, 36);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 81, 81);
     height: 50px;
     width: 200px;
     border-radius: 15px;
 }
- .sec-d-button{height: 50px;
- width: 200px;
- border-radius: 15px;}
 
 a {
     text-decoration: none;
-    color: azure;
+    color:black;
 }
 
 
+span{
+    padding: 10px;
+}
+
+
+
+/* second section style  */
+
+#first-div{
+     height: 300px;
+     width: 400px;
+     padding-left: 100px;
+}
 .match{
     background-color:black;
     display: grid;
-   border-radius: 10px;
+    border-radius: 10px;
     grid-template-columns: repeat(1, 1fr);
     padding: 10px;
     height: 250px;
@@ -63,15 +96,10 @@ a {
 
 }
 
-#footer-p{
-    display: inline;
-}
-span{
-    padding: 10px;
-}
+
+
 .trans{
     padding-top: 50px;
-   
     display: flex;
 }
 .transfer-player{
@@ -81,11 +109,16 @@ span{
 }
 
 article{
-padding-left:  10px;
+    padding-left:  10px;
 }
 .transfer-player article img{
     width: 250px;
 }
+
+
+
+
+/* footer style */
 
 footer {
     padding-top: 50px;
@@ -96,6 +129,164 @@ footer {
     text-align: center;
 
 }
+hr{
+    width: 70%;
+ 
+}
+.view{
+    visibility: hidden;
+}
+
+
+
+/* ----------------
+    Media Quaries
+ ------------------- */
+
+
+ /* mobile device */
+@media only screen and (max-width:688px) {
+
+   BODY{ margin: 10PX;
+   
+   }
+    .greatest-show{
+       
+        padding-top: 10px;
+        display: block;
+        height:950px;
+        width:480px;
+        text-align: center;
+        margin-left: 1PX;
+        padding-right:0PX;
+        padding-left: 0PX;
+
+    }
+    h1{
+        padding-left: 1px;
+        margin-right: 50px;
+        text-align: center;
+    }
+    .greatest-show img{
+            padding-top: 257px;
+            padding-left: 50px;
+            height: 400px;
+
+    }
+   #first-div{
+   
+    height: 250px;
+    width:380px;
+    margin-top: 10PX;
+    padding-left: 50px;
+        
+        
+      
+    }
+    .trans{
+        padding-left: 90PX;
+        display: contents;
+        margin-left: 100px;
+      
+    }
+    .match{
+        padding-left: 120px;
+        background-color: white;
+    }
+    .transfer-player {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 50px;
+            padding-left: 100PX;
+          
+            
+    }
+   
+        #footer-p{
+            display: inline-block;
+            margin-top: 50px;
+
+        }
+
+        footer{
+            color: blue;
+            margin-left: 200px;
+            height: 500px;
+            width: 100px;
+            background-color: white;
+            
+        }
+
+        
+   
+    }
+
+
+    /*-----
+        Tablet Device 
+     ------*/
+@media only screen and (min-width:688px) and (max-width:992px){
+    body{
+        margin: 0px;
+    }
+
+
+    .greatest-show{
+        margin-left:6px;
+        height: 600px;
+        width: 90%;
+    }
+        .greatest-show img {
+            padding-top: 197px;
+            padding-left: 50px;
+            height: 400px;}
+#first-div {
+        margin-left: 2px;
+        padding-left:10px;
+        height: 350px;
+        width: 300px;
+        margin-top: 10PX;
+
+
+
+    }
+  
+
+
+
+.match{
+    background-color: white;
+    display: flex;
+   
+    
+  
+}
+.trans{
+    margin-left: 5px;
+    padding-left: 2px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    
+}
+.transfer-player {
+    margin-left: 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ #view{
+    display: contents;
+    background-color: red;
+    color: blue;
+    padding-left: 2000px;
+ } 
+.view{
+    visibility: visible;
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+ 
+}
+
 
 
 
