@@ -13,7 +13,7 @@ body {
 
 
 section{
-    margin: 140px;
+    margin: 130px;
 }
 
 /* animation */
@@ -36,7 +36,7 @@ h1{
     font-size: 54px;
 }
 .greatest-show{
-    width: 1050px;
+    width: 1060px;
     height:500px ;
     display: flex;
     background-color: rgb(0, 0, 0);
@@ -103,16 +103,23 @@ span{
     display: flex;
 }
 .transfer-player{
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-left: 20px;
+  
 }
 
-article{
-    padding-left:  10px;
+article{ 
+    margin-bottom: 25px;
+    background-color: rgb(247, 232, 214);
+    padding-right:  10px;
+    border-radius:5px;
+    width: 230px;
+    margin-left: 25px;
 }
 .transfer-player article img{
-    width: 250px;
+    width: 240px;
 }
 
 
@@ -135,6 +142,13 @@ hr{
 }
 .view{
     visibility: hidden;
+}
+
+#social{
+    margin-top: 70px;
+    color: azure;
+    background-color: blue;
+  
 }
 
 
